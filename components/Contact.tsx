@@ -43,7 +43,7 @@ Service Type: ${formData.service}
 Message:
 ${formData.message}`;
 
-    const mailtoLink = `mailto:oayesh70@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:inf0@eagleon.digital?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     window.location.href = mailtoLink;
   };

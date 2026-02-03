@@ -372,8 +372,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         serviceOptions: ["بناء هوية تجارية", "CGI & 3D Modeling", "تطوير موقع إلكتروني", "استشارة استراتيجية", "أخرى"]
       },
       info: {
-        email: "contact@eagleondigital.com",
-        phone: "٠٠٠٠ ٠٠٠ ٧٩ ٩٦٢+",
+        email: "info@eagleon.digital",
+        phone: "+962 7 9318 8188",
         location: "٢٤٦، الطابق الخامس، مركز رام الله، شارع خالد بن الوليد، جبل الحسين، عمان"
       }
     },
