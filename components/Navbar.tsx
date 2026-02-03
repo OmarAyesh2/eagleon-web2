@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ content, lang, setLang, isVisibl
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           >
              <img 
-               src="Images/Asset1.png" 
+               src="https://github.com/OmarAyesh2/eagleon-web2/blob/main/Images/Asset1.png?raw=true" 
                alt="Eagleon Logo" 
                className="h-8 md:h-10 w-auto object-contain hover:scale-105 transition-transform"
              />

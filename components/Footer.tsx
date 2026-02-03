@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ content }) => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
             <img 
-               src="https://img.icons8.com/ios-filled/100/FFFFFF/eagle.png" 
+               src="https://github.com/OmarAyesh2/eagleon-web2/blob/main/Images/Asset1.png?raw=true" 
                alt="Eagleon" 
                className="h-10 w-auto mb-6 opacity-90" 
             />

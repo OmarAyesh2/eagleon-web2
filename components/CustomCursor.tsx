@@ -63,7 +63,7 @@ export const CustomCursor = () => {
         `}
       >
         <img 
-          src="\Images\Asset 2.png" 
+          src="https://github.com/OmarAyesh2/eagleon-web2/blob/main/Images/Asset%202.png?raw=true" 
           alt="cursor" 
           className={`w-full h-full object-contain transition-all duration-300 ${hovered ? 'drop-shadow-[0_0_12px_rgba(0,212,255,0.6)]' : ''}`}
         />
