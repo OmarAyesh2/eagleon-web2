@@ -176,9 +176,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         serviceOptions: ["Brand Identity Development", "CGI & 3D Modeling", "Web Development", "Strategic Consultation", "Other"]
       },
       info: {
-        email: "contact@eagleondigital.com",
-        phone: "+962 7 7511 6339",
-        phone: "+962 7 9000 0000",
+        email: "info@eagleon.digital",
+        phone: "+962 7 9318 8188",
         location: "246, 5th floor, Ramalla center, Khalid Bin Al Waleed St, Jabal Al Hussain, Amman"
       }
     },
