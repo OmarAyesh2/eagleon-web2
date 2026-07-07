@@ -5,40 +5,29 @@ interface PreloaderProps {
 }
 
 export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
-  const [progress, setProgress] = useState(0);
   const [exit, setExit] = useState(false);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + Math.floor(Math.random() * 15) + 5;
-        if (next >= 100) {
-          clearInterval(timer);
-          return 100;
-        }
-        return next;
-      });
-    }, 150);
+    const handleLoad = () => {
+      setExit(true);
+      // Let the transition finish before removing the component
+      setTimeout(onComplete, 500);
+    };
 
-    return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    if (progress === 100) {
-      const timeout = setTimeout(() => {
-        setExit(true);
-        setTimeout(onComplete, 800); // Wait for slide up animation
-      }, 500);
-      return () => clearTimeout(timeout);
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
     }
-  }, [progress, onComplete]);
+  }, [onComplete]);
 
   return (
     <div 
       className={`
         fixed inset-0 z-[9999] bg-black flex flex-col items-center justify-center
-        transition-transform duration-700 cubic-bezier(0.76, 0, 0.24, 1)
-        ${exit ? '-translate-y-full' : 'translate-y-0'}
+        transition-all duration-500 ease-in-out transform origin-center
+        ${exit ? 'opacity-0 scale-110 pointer-events-none' : 'opacity-100 scale-100'}
       `}
     >
       <div className="relative z-10 text-center">
@@ -49,7 +38,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         
         <div className="flex items-center justify-between w-full max-w-[200px] mx-auto mt-8 border-t border-white/20 pt-4">
            <span className="font-mono text-xs text-textDim uppercase tracking-widest">System Boot</span>
-           <span className="font-mono text-xl text-primary font-bold">{Math.min(progress, 100)}%</span>
+           <span className="font-mono text-xl text-primary font-bold">INIT</span>
         </div>
       </div>
 

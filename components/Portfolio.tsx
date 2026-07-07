@@ -115,10 +115,10 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
       
       if (driveId) {
         return (
-          <div className="w-full h-full max-w-5xl aspect-video rounded-lg shadow-2xl shadow-primary/20 overflow-hidden bg-black">
+          <div className="w-full h-full object-contain overflow-hidden bg-black flex items-center justify-center">
             <iframe 
               src={`https://drive.google.com/file/d/${driveId}/preview`}
-              className="w-full h-full border-0"
+              className="w-full h-full border-0 object-contain"
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
               title="Project Video"
@@ -132,7 +132,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
           key={activeMedia.url} // Force re-render on change
           controls 
           autoPlay 
-          className="max-w-full max-h-[80vh] rounded-lg shadow-2xl shadow-primary/20 outline-none"
+          className="w-full h-full object-contain outline-none"
           src={activeMedia.url}
         >
           Your browser does not support the video tag.
@@ -145,7 +145,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
         key={activeMedia.url}
         src={activeMedia.url} 
         alt={`${activeProject?.title} - ${mediaIndex + 1}`} 
-        className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl shadow-primary/20 select-none"
+        className="w-full h-full object-contain select-none"
         draggable={false}
       />
     );
@@ -193,7 +193,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
              <div 
                key={`${project.title}-${index}`} 
                onClick={() => openLightbox(index)}
-               className="group relative aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-3xl bg-surfaceHighlight cursor-pointer border border-white/5 hover:border-white/20 transition-colors animate-fade-in"
+               className="group relative aspect-[4/3] md:aspect-golden overflow-hidden rounded-3xl bg-surfaceHighlight cursor-pointer border border-white/5 hover:border-white/20 transition-colors animate-fade-in"
                style={{ animationDelay: `${index * 100}ms` }}
              >
                 {/* Album Cover */}
@@ -237,14 +237,11 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
         </div>
       </div>
 
-      {/* Lightbox Modal (Album View) */}
+      {/* Lightbox Modal (Case Study Overlay) */}
       {activeProject && activeMedia && (
         <div 
-          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/98 backdrop-blur-xl animate-fade-in"
+          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/95 backdrop-blur-xl animate-fade-in p-4 md:p-8"
           onClick={closeLightbox}
-          onTouchStart={onTouchStart}
-          onTouchMove={onTouchMove}
-          onTouchEnd={onTouchEnd}
         >
           {/* Close Button - Fixed position for reliability */}
           <button 
@@ -255,58 +252,115 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
             <X size={24} className="group-hover:rotate-90 transition-transform duration-300" />
           </button>
 
-          {/* Navigation UI: Prev Button */}
-          {activeProject.media.length > 1 && (
-            <button 
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-[100] hidden md:block cursor-pointer backdrop-blur-sm"
-              onClick={handlePrev}
-            >
-              <ChevronLeft size={32} />
-            </button>
-          )}
-
-          {/* Navigation UI: Next Button */}
-          {activeProject.media.length > 1 && (
-            <button 
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors z-[100] hidden md:block cursor-pointer backdrop-blur-sm"
-              onClick={handleNext}
-            >
-              <ChevronRight size={32} />
-            </button>
-          )}
-
-          {/* Main Content Area */}
+          {/* Unified Container */}
           <div 
-            className="relative w-full max-w-6xl h-full flex flex-col items-center justify-center p-4"
+            className="relative w-full max-w-6xl bg-[#0d0d0e] border border-white/10 rounded-3xl p-6 md:p-10 lg:p-12 overflow-y-auto max-h-[90vh] custom-scrollbar"
             onClick={(e) => e.stopPropagation()}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
           >
-            <div className="relative w-full h-[70vh] flex items-center justify-center">
-              {renderMedia()}
-            </div>
-            
-            <div className="mt-8 text-center animate-fade-in-up select-none">
-              <span className="text-primary font-mono text-sm uppercase tracking-widest block mb-2">
-                {activeProject.category}
-              </span>
-              <h3 className="font-display font-bold text-2xl md:text-4xl text-white">
-                {activeProject.title}
-              </h3>
-              <p className="text-textDim text-sm mt-2 flex items-center justify-center gap-2">
-                 <span>{mediaIndex + 1} / {activeProject.media.length}</span>
-              </p>
+            {/* Flexbox Architecture */}
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
               
-              {/* Pagination Dots */}
-              {activeProject.media.length > 1 && (
-                <div className="flex justify-center gap-2 mt-4">
-                  {activeProject.media.map((_, idx) => (
+              {/* Left Pane Layout (Media) */}
+              <div className="lg:w-phi-major lg:flex-shrink-0 flex flex-col items-center justify-center relative w-full">
+                <div className="relative w-full h-[45vh] md:h-[50vh] flex items-center justify-center bg-black/40 rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+                  {/* Navigation UI: Prev Button */}
+                  {activeProject.media.length > 1 && (
                     <button 
-                      key={idx}
-                      onClick={() => setMediaIndex(idx)}
-                      className={`w-2 h-2 rounded-full transition-all ${idx === mediaIndex ? 'bg-primary w-6' : 'bg-white/20 hover:bg-white/50'}`}
-                    />
-                  ))}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-black/50 hover:bg-white/20 text-white transition-colors z-[100] hidden md:block cursor-pointer backdrop-blur-md border border-white/10"
+                      onClick={handlePrev}
+                    >
+                      <ChevronLeft size={24} className="md:w-8 md:h-8" />
+                    </button>
+                  )}
+
+                  {/* Navigation UI: Next Button */}
+                  {activeProject.media.length > 1 && (
+                    <button 
+                      className="absolute right-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-black/50 hover:bg-white/20 text-white transition-colors z-[100] hidden md:block cursor-pointer backdrop-blur-md border border-white/10"
+                      onClick={handleNext}
+                    >
+                      <ChevronRight size={24} className="md:w-8 md:h-8" />
+                    </button>
+                  )}
+
+                  {renderMedia()}
                 </div>
-              )}
+
+                {/* Pagination Dots & Nav */}
+                <div className="mt-6 text-center animate-fade-in-up select-none w-full">
+                  {activeProject.media.length > 1 && (
+                    <div className="flex flex-col items-center">
+                      <p className="text-textDim text-sm font-mono tracking-widest mb-3">
+                         {mediaIndex + 1} / {activeProject.media.length}
+                      </p>
+                      <div className="flex justify-center gap-2.5">
+                        {activeProject.media.map((_, idx) => (
+                          <button 
+                            key={idx}
+                            onClick={() => setMediaIndex(idx)}
+                            className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === mediaIndex ? 'bg-primary w-6' : 'bg-white/20 hover:bg-white/50'}`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Right Pane Layout (Text) */}
+              <div className="lg:w-phi-minor lg:flex-shrink-0 flex flex-col justify-start animate-fade-in-up w-full">
+                <div className="mb-6">
+                  <span className="text-primary font-mono text-xs md:text-sm uppercase tracking-widest inline-flex items-center gap-2 bg-zinc-900/80 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10">
+                    <Layers size={14} className="md:w-4 md:h-4" />
+                    {activeProject.category}
+                  </span>
+                </div>
+                <h3 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-8 leading-tight">
+                  {activeProject.title}
+                </h3>
+                
+                <div className="space-y-8 lg:space-y-10">
+                  {/* Challenge */}
+                  {(activeProject as any).challenge && (
+                    <div className="relative pl-5 border-l-2 border-white/10">
+                      <div className="absolute top-0 left-[-2px] w-[2px] h-6 bg-primary"></div>
+                      <h4 className="text-white font-bold text-xs md:text-sm mb-2 uppercase tracking-widest font-mono">The Challenge</h4>
+                      <p className="text-zinc-200 text-base md:text-lg leading-relaxed">
+                        {(activeProject as any).challenge}
+                      </p>
+                    </div>
+                  )}
+                  
+                  {/* Solution */}
+                  {(activeProject as any).solution && (
+                    <div className="relative pl-5 border-l-2 border-white/10">
+                      <div className="absolute top-0 left-[-2px] w-[2px] h-6 bg-primary"></div>
+                      <h4 className="text-white font-bold text-xs md:text-sm mb-2 uppercase tracking-widest font-mono">Our Solution</h4>
+                      <p className="text-zinc-200 text-base md:text-lg leading-relaxed">
+                        {(activeProject as any).solution}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Metrics */}
+                  {(activeProject as any).metrics && (
+                    <div className="pt-4">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+                        {((activeProject as any).metrics).map((metric: any, idx: number) => (
+                          <div key={idx} className="bg-surfaceHighlight border border-white/5 hover:border-white/20 transition-colors p-4 md:p-5 rounded-2xl flex flex-col items-start justify-center">
+                            <span className="text-primary font-display font-bold text-2xl md:text-3xl mb-1 md:mb-2">{metric.value}</span>
+                            <span className="text-zinc-400 text-[10px] md:text-xs uppercase tracking-widest font-bold">{metric.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>

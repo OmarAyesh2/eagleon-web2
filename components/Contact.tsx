@@ -145,7 +145,7 @@ ${formData.message}`;
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                  className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white text-start focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                 />
               </div>
               
@@ -158,7 +158,7 @@ ${formData.message}`;
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white text-start focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -168,7 +168,7 @@ ${formData.message}`;
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white text-start focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -180,7 +180,7 @@ ${formData.message}`;
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none cursor-pointer"
+                    className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white text-start focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none cursor-pointer"
                   >
                     {content.form.serviceOptions.map((opt, i) => (
                       <option key={i} value={opt} className="bg-surface text-white py-2">{opt}</option>
@@ -198,7 +198,7 @@ ${formData.message}`;
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-none"
+                  className="w-full bg-background border border-white/10 rounded-xl px-4 py-3 text-white text-start focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-none"
                 ></textarea>
               </div>
 

@@ -23,6 +23,9 @@ export interface PortfolioItem {
   filter: string;
   coverUrl: string;
   media: PortfolioMedia[];
+  challenge: string;
+  solution: string;
+  metrics: { label: string; value: string }[];
 }
 
 export interface ContentStrings {
