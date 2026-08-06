@@ -1,4 +1,9 @@
 import { ContentStrings } from './types';
+import brandatyLogo from './Images/logos/Brandaty.png';
+import burgerHunchLogo from './Images/logos/Burger Hunch.png';
+import jilyaLogo from './Images/logos/Jilya.png';
+import skyLinksLogo from './Images/logos/SkyLinks.png';
+import sugarDoseLogo from './Images/logos/Sugar Dose.png';
 
 export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
   en: {
@@ -17,16 +22,15 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
     partners: {
       title: "TRUSTED BY INDUSTRY VISIONARIES",
       items: [
-        { name: "NEXUS", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=NEXUS" },
-        { name: "VERTEX", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=VERTEX" },
-        { name: "QUANTUM", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=QUANTUM" },
-        { name: "CYBERDYNE", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=CYBERDYNE" },
-        { name: "OMEGA", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=OMEGA" },
-        { name: "HELIOS", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=HELIOS" },
-        { name: "TITAN", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=TITAN" },
-        { name: "APEX", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=APEX" },
-        { name: "ECHO", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=ECHO" },
-        { name: "FLUX", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=FLUX" }
+        { name: "RedEYE", logo: "./images/logos/Redeye.png" },
+        { name: "Jilya", logo: "./Images/logos/Jilya.png" },
+        { name: "Lorenzo", logo: "./images/logos/Lorenzo.png" },
+        { name: "Book.JO", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Book.JO" },
+        { name: "1/2 M", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=1%2F2+M" },
+        { name: "Brandaty", logo: "./Images/logos/Brandaty.png" },
+        { name: "Burger Hunch", logo: "./Images/logos/Burger Hunch.png" },
+        { name: "SkyLinks", logo: "./Images/logos/SkyLinks.png" },
+        { name: "Sugar Dose", logo: "./Images/logos/Sugar Dose.png" }
       ],
     },
     services: {
@@ -109,91 +113,105 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
       ],
       items: [
         {
-          title: "Quantum Dynamics",
+          title: "Redeye",
           category: "CGI / Motion Design",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-05_xmmyms.png",
           media: [
-            { type: 'video', url: "https://drive.google.com/file/d/14dKaQYnwsz8BRScHiKZPVS5vlGWndgtt/view?usp=sharing" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1742323487/8_vk6qrm.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1740245943/redeye_1_lsfhyo.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033526/Comp_2_tspkrh.mp4" }
           ],
-          challenge: "Quantum Dynamics struggled with conveying the complex inner workings of their next-gen microprocessors to enterprise clients using standard 2D schematics, resulting in low engagement during technical pitches.",
-          solution: "We engineered a hyper-realistic 3D motion design sequence that visually deconstructs the microprocessor's architecture, translating abstract technical specifications into an intuitive, high-impact visual narrative.",
+          challenge: "Standing out in a saturated coffee market required moving beyond static photography. Redeye needed high-energy visual assets to showcase their venue space and launch signature drinks with maximum visual punch.",
+          solution: "We produced 2 photorealistic CGI renders and 1 high-impact 3D motion graphics sequence. By integrating custom lighting and dynamic fluid simulations, we highlighted the brand’s storefront identity and product appeal across digital touchpoints.",
           metrics: [
-            { label: "Increase in Engagement", value: "215%" },
-            { label: "Pitch Conversion Rate", value: "+45%" },
-            { label: "Rendering Cost Saved", value: "60%" }
+            { label: "Social Engagement", value: "3.5x" },
+            { label: "Reel Watch Time", value: "+65%" },
+            { label: "CGI Visual Consistency", value: "100%" }
           ]
         },
         {
-          title: "Apex Finance",
-          category: "Web Platform / Fintech",
-          filter: "web",
-          coverUrl: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop",
+          title: "Lorenzo",
+          category: "CGI / Motion Design",
+          filter: "cgi",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034411/dfg-01_s9pojk.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033301/CGI_1_dvfmi7.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033292/CGI_2_qkdqor.mp4" }
           ],
-          challenge: "Apex Finance faced severe user drop-offs during their onboarding process due to a fragmented, legacy web interface that failed to establish trust or guide institutional investors effectively.",
-          solution: "We architected a custom, high-performance web platform utilizing a bespoke design system built on the Golden Ratio, ensuring seamless onboarding, robust security perception, and streamlined user flows.",
+          challenge: "Capturing appetizing, consistent product visuals through traditional food photography poses logistical and styling limits—especially when maintaining brand standards across multi-branch promotions.",
+          solution: "We developed 2 ultra-realistic 3D CGI commercial visuals for Lorenzo Pizza. Focusing on detailed material texturing, perfect studio lighting, and dynamic composition, we delivered scalable assets built for high-converting marketing campaigns.",
           metrics: [
-            { label: "Onboarding Drop-off", value: "-73%" },
-            { label: "User Retention", value: "+82%" },
-            { label: "Platform Load Speed", value: "<1.2s" }
+            { label: "Ad Click-Through Rate", value: "+40%" },
+            { label: "Food Styling Delays", value: "0" },
+            { label: "Campaign Output Speed", value: "2x" }
           ]
         },
         {
-          title: "Neon Horizon",
+          title: "Brandaty",
+          category: "Sign Designs",
+          filter: "branding",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034411/dfg-02_ylbfiv.png",
+          media: [
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033523/Black_Colourful_Neon_Light_Cyber_Monday_Instagram_Post_pv3kg9.mp4" }
+
+          ],
+          challenge: "Brandaty needed a physical storefront sign that seamlessly translated their digital identity into a high-visibility structural landmark without sacrificing legibility or design fidelity.",
+          solution: "We designed a modern, architectural sign system optimized for physical fabrication. By balancing typography hierarchy, scale, and lighting integration, the final design maximized street-level visibility and elevated brand presence.",
+          metrics: [
+            { label: "Production-Ready Accuracy", value: "100%" },
+            { label: "Storefront Foot Traffic Visibility", value: "+50%" },
+            { label: "Brand Recognition", value: "High" }
+          ]
+        },
+        {
+          title: "Sugar Dose",
           category: "CGI / Automotive",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-06_y01xcn.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop" },
-            {
-              type: 'video',
-              url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1742588195/Transparent_Video_ve4wwu.mp4"
-            }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033536/cgi1_r070g1.mp4" }
           ],
-          challenge: "Launching an electric vehicle line required high-end marketing assets before physical prototypes were fully manufactured, limiting their pre-launch marketing capabilities.",
-          solution: "Our team developed full-scale, photorealistic CGI environments and automotive models, providing marketing teams with pixel-perfect promotional assets months ahead of production.",
+          challenge: "Sugar Dose required a hero visual for a high-stakes campaign launch that needed to look richer and more immersive than standard studio product photography could achieve.",
+          solution: "We created a stylized 3D CGI scene featuring custom environmental lighting, detailed product surfaces, and vibrant color grading engineered specifically to grab immediate attention on digital feeds.",
           metrics: [
-            { label: "Pre-orders Generated", value: "12,000+" },
-            { label: "Time-to-Market Saved", value: "4 Months" },
-            { label: "Visual Fidelity", value: "100% CGI" }
+            { label: "Higher Engagement Rate", value: "2.8x" },
+            { label: "Photorealistic Control", value: "100%" },
+            { label: "Campaign Reach", value: "+35%" }
           ]
         },
         {
-          title: "Velvet Interiors",
+          title: "Jilya",
           category: "Branding / Luxury",
           filter: "branding",
-          coverUrl: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-03_dqk1cf.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=1000&auto=format&fit=crop" }
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033525/3_lexrpg.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033524/1_2_zk2cgm.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033524/7_u1qemv.png" }
           ],
-          challenge: "Velvet Interiors needed to pivot from a mid-market furniture retailer to a premium B2B interior design consultancy but lacked a visual identity that communicated luxury and exclusivity.",
-          solution: "We crafted a sophisticated brand identity rooted in mathematical precision, redesigning their communication strategy, brand guidelines, and visual assets to position them as a high-end industry authority.",
+          challenge: "Jilya needed a cohesive visual identity across their social media feeds to convey their dining experience, drive local foot traffic, and maintain continuous audience interest.",
+          solution: "We designed a suite of custom social media assets and campaign templates. Utilizing clean typography, structured layouts, and rich brand colors, we built a visual framework optimized for consistent content deployment.",
           metrics: [
-            { label: "Average Deal Size", value: "+310%" },
-            { label: "Premium Client Inquiries", value: "+150%" },
-            { label: "Market Repositioning", value: "Complete" }
+            { label: "Profile Impressions", value: "+80%" },
+            { label: "Feed Consistency", value: "100%" },
+            { label: "Local Engagement", value: "+25%" }
           ]
         },
         {
-          title: "Cyberpunk 2099",
-          category: "3D Environment",
+          title: "1/2 M",
+          category: "CGI",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034632/Untitled-1_oyrlwh.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'video', url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033295/Comp_plgzaa.mp4" }
           ],
-          challenge: "A leading entertainment studio required vast, immersive futuristic cityscapes for a virtual production, but traditional set building was cost-prohibitive and lacked flexibility.",
-          solution: "We designed dynamic, scalable 3D CGI environments optimized for real-time virtual production, allowing directors complete creative freedom over lighting, angles, and atmospheric effects.",
+          challenge: "To highlight a premium product release, 1/2M Coffee House required a hero visual that delivered a sophisticated, cinematic feel beyond standard promotional imagery.",
+          solution: "We built a custom 3D CGI commercial render featuring precision lighting and realistic material shaders to elevate the brand's premium identity across digital and print media.",
           metrics: [
-            { label: "Production Costs Reduced", value: "75%" },
-            { label: "Set Setup Time", value: "-90%" },
-            { label: "Render Assets Created", value: "500+" }
+            { label: "Campaign Performance", value: "+50%" },
+            { label: "Studio-Grade Precision", value: "100%" },
+            { label: "Visual Impact vs Static Photo", value: "3x" }
           ]
         }
       ]
@@ -251,16 +269,15 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
     partners: {
       title: "شركات رائدة تثق بنا",
       items: [
-        { name: "نيكسوس", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=NEXUS" },
-        { name: "فيرتكس", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=VERTEX" },
-        { name: "كوانتوم", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=QUANTUM" },
-        { name: "سايبرداين", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=CYBERDYNE" },
-        { name: "أوميغا", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=OMEGA" },
-        { name: "هيليوس", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=HELIOS" },
-        { name: "تيتان", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=TITAN" },
-        { name: "أبيكس", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=APEX" },
-        { name: "إيكو", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=ECHO" },
-        { name: "فلوكس", logo: "https://placehold.co/200x80/030303/FFFFFF/png?text=FLUX" }
+        { name: "RedEYE", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=RedEYE" },
+        { name: "Jilya", logo: jilyaLogo },
+        { name: "Lorenzo", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Lorenzo" },
+        { name: "Book.JO", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Book.JO" },
+        { name: "1/2 M", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=1%2F2+M" },
+        { name: "Brandaty", logo: brandatyLogo },
+        { name: "Burger Hunch", logo: burgerHunchLogo },
+        { name: "SkyLinks", logo: skyLinksLogo },
+        { name: "Sugar Dose", logo: sugarDoseLogo }
       ],
     },
     services: {
@@ -343,88 +360,104 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
       ],
       items: [
         {
-          title: "ديناميكيات الكم",
-          category: "CGI / حركة",
+          title: "Redeye",
+          category: "CGI / تصميم حركي",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-05_xmmyms.png",
           media: [
-            { type: 'video', url: "https://drive.google.com/file/d/14dKaQYnwsz8BRScHiKZPVS5vlGWndgtt/view?usp=sharing" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1742323487/8_vk6qrm.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1740245943/redeye_1_lsfhyo.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033526/Comp_2_tspkrh.mp4" }
           ],
-          challenge: "عانت 'ديناميكيات الكم' من صعوبة نقل التفاصيل المعقدة لمعالجاتها الدقيقة لعملائها من الشركات باستخدام المخططات ثنائية الأبعاد التقليدية، مما أدى إلى انخفاض التفاعل في العروض التقديمية التقنية.",
-          solution: "قمنا بهندسة تسلسل تصميم حركي ثلاثي الأبعاد فائق الواقعية يفكك بنية المعالج الدقيق بصرياً، ويترجم المواصفات الفنية المجردة إلى سرد مرئي بديهي وعالي التأثير.",
+          challenge: "تطلب التميز في سوق القهوة المشبع التجاوز عن التصوير الفوتوغرافي الثابت. احتاجت Redeye إلى أصول بصرية عالية الطاقة لإبراز المساحة وإطلاق مشروباتهم الخاصة بأقصى تأثير بصري.",
+          solution: "قمنا بإنتاج تصاميم CGI واقعية فائقة الجودة وسلسلة رسوم حركية ثلاثية الأبعاد عالية التأثير. من خلال دمج إضاءة مخصصة ومحاكاة ديناميكية للسوائل، أبرزنا هوية الفرع وجاذبية المنتجات عبر مختلف المنصات الرقمية.",
           metrics: [
-            { label: "زيادة التفاعل", value: "215%" },
-            { label: "معدل تحويل العروض التقديمية", value: "+45%" },
-            { label: "توفير تكلفة التصميم والتصوير", value: "60%" }
+            { label: "التفاعل عبر وسائل التواصل", value: "3.5x" },
+            { label: "وقت مشاهدة الريلز", value: "+65%" },
+            { label: "الاتساق البصري لـ CGI", value: "100%" }
           ]
         },
         {
-          title: "أبيكس للتمويل",
-          category: "منصة ويب / تكنولوجيا مالية",
-          filter: "web",
-          coverUrl: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop",
-          media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" }
-          ],
-          challenge: "واجهت 'أبيكس للتمويل' تسرباً كبيراً للمستخدمين أثناء عملية التسجيل بسبب واجهة ويب قديمة ومشتتة فشلت في بناء الثقة وتوجيه المستثمرين المؤسسيين بفعالية.",
-          solution: "قمنا بتصميم وبناء منصة ويب مخصصة وعالية الأداء تعتمد على نظام تصميم مبني على النسبة الذهبية، مما يضمن تسجيلاً سلساً وموثوقية أمنية عالية وتجربة مستخدم مبسطة.",
-          metrics: [
-            { label: "انخفاض تسرب المستخدمين", value: "-73%" },
-            { label: "الاحتفاظ بالمستخدمين", value: "+82%" },
-            { label: "سرعة تحميل المنصة", value: "<1.2s" }
-          ]
-        },
-        {
-          title: "أفق النيون",
-          category: "CGI / سيارات",
+          title: "Lorenzo",
+          category: "CGI / تصميم حركي",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034411/dfg-01_s9pojk.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'video', url: "https://drive.google.com/file/d/14dKaQYnwsz8BRScHiKZPVS5vlGWndgtt/view?usp=sharing" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033301/CGI_1_dvfmi7.mp4" },
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033292/CGI_2_qkdqor.mp4" }
           ],
-          challenge: "تطلب إطلاق خط السيارات الكهربائية أصولاً تسويقية متطورة قبل أن يتم تصنيع النماذج الأولية المادية بالكامل، مما حد من قدرات التسويق قبل الإطلاق.",
-          solution: "طور فريقنا بيئات CGI واقعية بالكامل ونماذج سيارات دقيقة، مما وفر لفرق التسويق أصولاً ترويجية مثالية قبل أشهر من بدء الإنتاج الفعلي.",
+          challenge: "إن التقاط صور منتجات شهية ومتسقة من خلال تصوير الأطعمة التقليدي يفرض قيوداً لوجستية وشكلية—خاصة عند الحفاظ على معايير العلامة التجارية عبر عروض ترويجية متعددة الفروع.",
+          solution: "طورنا تصاميم إعلانية ثلاثية الأبعاد CGI فائقة الواقعية لبيتزا لورينزو. بالتركيز على تفاصيل إكساء المواد والإضاءة الاحترافية والتكوين الديناميكي، قدمنا أصولاً قابلة للتوسع ومبنية لحملات تسويقية عالية التحويل.",
           metrics: [
-            { label: "الطلبات المسبقة", value: "12,000+" },
-            { label: "توفير وقت الوصول للسوق", value: "4 أشهر" },
-            { label: "الدقة البصرية", value: "100% CGI" }
+            { label: "معدل النقر على الإعلانات", value: "+40%" },
+            { label: "تأخير تنسيق الأطعمة", value: "0" },
+            { label: "سرعة إنتاج الحملات", value: "2x" }
           ]
         },
         {
-          title: "فيلفت للديكور",
+          title: "Brandaty",
+          category: "تصميم لافتات",
+          filter: "branding",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034411/dfg-02_ylbfiv.png",
+          media: [
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033523/Black_Colourful_Neon_Light_Cyber_Monday_Instagram_Post_pv3kg9.mp4" }
+          ],
+          challenge: "احتاجت Brandaty إلى لافتة واجهة محل مادية تترجم هويتها الرقمية بسلاسة إلى معلم هيكلي عالي الظهور دون التضحية بوضوح القراءة أو جودة التصميم.",
+          solution: "صممنا نظام لافتات معماري حديث محسّن للتصنيع الفعلي. من خلال الموازنة بين التدرج الهرمي للخطوط، الحجم، ودمج الإضاءة، حقق التصميم النهائي أقصى قدر من الظهور على مستوى الشارع ورفع حضور العلامة التجارية.",
+          metrics: [
+            { label: "دقة جاهزة للإنتاج", value: "100%" },
+            { label: "رؤية الواجهة للمارة", value: "+50%" },
+            { label: "التعرف على العلامة التجارية", value: "عالي" }
+          ]
+        },
+        {
+          title: "Sugar Dose",
+          category: "CGI / تجسيم ثلاثي الأبعاد",
+          filter: "cgi",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-06_y01xcn.png",
+          media: [
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033536/cgi1_r070g1.mp4" }
+          ],
+          challenge: "تطلبت Sugar Dose عنصراً بصرياً رئيسياً لإطلاق حملة رفيعة المستوى، والذي كان بحاجة إلى الظهور بشكل أغنى وأكثر إبهاراً مما يمكن أن تحققه تصاوير المنتجات الاستوديو التقليدية.",
+          solution: "أنشأنا مشهداً ثلاثي الأبعاد CGI متميزاً يتميز بإضاءة بيئية مخصصة، وأسطح منتجات دقيقة، وتصحيح ألوان حيوي تم تصميمه خصيصاً لجذب الانتباه الفوري على المنصات الرقمية.",
+          metrics: [
+            { label: "معدل تفاعل أعلى", value: "2.8x" },
+            { label: "تحكم واقعي فائق", value: "100%" },
+            { label: "وصول الحملة", value: "+35%" }
+          ]
+        },
+        {
+          title: "Jilya",
           category: "هوية بصرية / فخامة",
           filter: "branding",
-          coverUrl: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034412/dfg-03_dqk1cf.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'image', url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=1000&auto=format&fit=crop" }
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033525/3_lexrpg.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033524/1_2_zk2cgm.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786033524/7_u1qemv.png" }
           ],
-          challenge: "احتاجت 'فيلفت للديكور' إلى التحول من بائع أثاث بالتجزئة إلى استشارات تصميم داخلي للشركات (B2B)، ولكنها افتقرت إلى هوية بصرية تعكس الفخامة والحصرية.",
-          solution: "صممنا هوية تجارية راقية متجذرة في الدقة الرياضية، وأعدنا تصميم استراتيجية الاتصال الخاصة بهم، وأدلة العلامة التجارية، والأصول المرئية لوضعهم كسلطة صناعية رائدة وراقية.",
+          challenge: "احتاجت Jilya إلى هوية بصرية متماسكة عبر حسابات التواصل الاجتماعي لنقل تجربة تناول الطعام لديهم، وزيادة الإقبال المحلي، والحفاظ على اهتمام الجمهور المستمر.",
+          solution: "صممنا مجموعة من التصاميم المخصصة لوسائل التواصل الاجتماعي وقوالب الحملات. باستغلال خطوط واضحة، وتنسيقات منظمة، وألوان علامة غنية، بنينا إطاراً بصرياً محسّناً للنشر المستمر.",
           metrics: [
-            { label: "متوسط حجم الصفقة", value: "+310%" },
-            { label: "استفسارات العملاء المتميزين", value: "+150%" },
-            { label: "إعادة التموضع في السوق", value: "مكتمل" }
+            { label: "انطباعات الصفحة", value: "+80%" },
+            { label: "اتساق المحتوى", value: "100%" },
+            { label: "التفاعل المحلي", value: "+25%" }
           ]
         },
         {
-          title: "سايبر بانك ٢٠٩٩",
-          category: "بيئة ثلاثية الأبعاد",
+          title: "1/2 M",
+          category: "CGI",
           filter: "cgi",
-          coverUrl: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786034632/Untitled-1_oyrlwh.png",
           media: [
-            { type: 'image', url: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop" },
-            { type: 'video', url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" }
+            { type: 'video', url: "https://res.cloudinary.com/dzbsayerm/video/upload/v1786033295/Comp_plgzaa.mp4" }
           ],
-          challenge: "تطلب استوديو ترفيهي رائد مناظر مدينة مستقبلية واسعة وغامرة لإنتاج افتراضي، لكن بناء المجموعات المادية التقليدية كان باهظ التكلفة وافتقر إلى المرونة الكافية.",
-          solution: "صممنا بيئات CGI ثلاثية الأبعاد ديناميكية وقابلة للتطوير ومحسنة للإنتاج الافتراضي في الوقت الفعلي، مما أتاح للمخرجين حرية إبداعية كاملة في الإضاءة والزوايا والمؤثرات الجوية.",
+          challenge: "لتسليط الضوء على إطلاق منتج فاخر، احتاج مقهى 1/2M إلى مشهد بصري رئيسي يمنح إحساساً سينمائياً راقياً يتجاوز الصور الترويجية القياسية.",
+          solution: "أنشأنا مجسماً تجارياً ثلاثي الأبعاد CGI مخصصاً يشتمل على إضاءة دقيقة ومواد واقعية لرفع هوية العلامة التجارية الفاخرة عبر الوسائط الرقمية والمطبوعة.",
           metrics: [
-            { label: "خفض تكاليف الإنتاج", value: "75%" },
-            { label: "وقت إعداد المجموعة", value: "-90%" },
-            { label: "الأصول الرقمية المنشأة", value: "500+" }
+            { label: "أداء الحملة", value: "+50%" },
+            { label: "دقة بمستوى الاستوديو", value: "100%" },
+            { label: "التأثير البصري مقارنة بالصور", value: "3x" }
           ]
         }
       ]

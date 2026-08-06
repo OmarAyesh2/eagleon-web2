@@ -261,11 +261,11 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
             onTouchEnd={onTouchEnd}
           >
             {/* Flexbox Architecture */}
-            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
               
               {/* Left Pane Layout (Media) */}
-              <div className="lg:w-phi-major lg:flex-shrink-0 flex flex-col items-center justify-center relative w-full">
-                <div className="relative w-full h-[45vh] md:h-[50vh] flex items-center justify-center bg-black/40 rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+              <div className="w-full lg:w-[52%] lg:flex-shrink-0 flex flex-col items-center justify-center relative">
+                <div className="relative w-full h-[45vh] md:h-[50vh] lg:h-[500px] flex items-center justify-center bg-black/40 rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
                   {/* Navigation UI: Prev Button */}
                   {activeProject.media.length > 1 && (
                     <button 
@@ -293,7 +293,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
                 <div className="mt-6 text-center animate-fade-in-up select-none w-full">
                   {activeProject.media.length > 1 && (
                     <div className="flex flex-col items-center">
-                      <p className="text-textDim text-sm font-mono tracking-widest mb-3">
+                      <p className="text-textDim text-sm font-mono tracking-widest mb-3" dir="ltr">
                          {mediaIndex + 1} / {activeProject.media.length}
                       </p>
                       <div className="flex justify-center gap-2.5">
@@ -311,7 +311,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
               </div>
 
               {/* Right Pane Layout (Text) */}
-              <div className="lg:w-phi-minor lg:flex-shrink-0 flex flex-col justify-start animate-fade-in-up w-full">
+              <div className="w-full lg:w-[45%] lg:flex-shrink-0 flex flex-col justify-start animate-fade-in-up">
                 <div className="mb-6">
                   <span className="text-primary font-mono text-xs md:text-sm uppercase tracking-widest inline-flex items-center gap-2 bg-zinc-900/80 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10">
                     <Layers size={14} className="md:w-4 md:h-4" />
@@ -325,8 +325,8 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
                 <div className="space-y-8 lg:space-y-10">
                   {/* Challenge */}
                   {(activeProject as any).challenge && (
-                    <div className="relative pl-5 border-l-2 border-white/10">
-                      <div className="absolute top-0 left-[-2px] w-[2px] h-6 bg-primary"></div>
+                    <div className="relative ltr:pl-5 ltr:border-l-2 rtl:pr-5 rtl:border-r-2 border-white/10">
+                      <div className="absolute top-0 ltr:left-[-2px] rtl:right-[-2px] w-[2px] h-6 bg-primary"></div>
                       <h4 className="text-white font-bold text-xs md:text-sm mb-2 uppercase tracking-widest font-mono">The Challenge</h4>
                       <p className="text-zinc-200 text-base md:text-lg leading-relaxed">
                         {(activeProject as any).challenge}
@@ -336,8 +336,8 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
                   
                   {/* Solution */}
                   {(activeProject as any).solution && (
-                    <div className="relative pl-5 border-l-2 border-white/10">
-                      <div className="absolute top-0 left-[-2px] w-[2px] h-6 bg-primary"></div>
+                    <div className="relative ltr:pl-5 ltr:border-l-2 rtl:pr-5 rtl:border-r-2 border-white/10">
+                      <div className="absolute top-0 ltr:left-[-2px] rtl:right-[-2px] w-[2px] h-6 bg-primary"></div>
                       <h4 className="text-white font-bold text-xs md:text-sm mb-2 uppercase tracking-widest font-mono">Our Solution</h4>
                       <p className="text-zinc-200 text-base md:text-lg leading-relaxed">
                         {(activeProject as any).solution}
@@ -350,7 +350,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ content, setLightboxOpen }
                     <div className="pt-4">
                       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
                         {((activeProject as any).metrics).map((metric: any, idx: number) => (
-                          <div key={idx} className="bg-surfaceHighlight border border-white/5 hover:border-white/20 transition-colors p-4 md:p-5 rounded-2xl flex flex-col items-start justify-center">
+                          <div key={idx} className="bg-surfaceHighlight border border-white/5 hover:border-white/20 transition-colors p-4 md:p-5 rounded-2xl flex flex-col items-start justify-center text-start">
                             <span className="text-primary font-display font-bold text-2xl md:text-3xl mb-1 md:mb-2">{metric.value}</span>
                             <span className="text-zinc-400 text-[10px] md:text-xs uppercase tracking-widest font-bold">{metric.label}</span>
                           </div>
