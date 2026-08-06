@@ -269,15 +269,15 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
     partners: {
       title: "شركات رائدة تثق بنا",
       items: [
-        { name: "RedEYE", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=RedEYE" },
-        { name: "Jilya", logo: jilyaLogo },
-        { name: "Lorenzo", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Lorenzo" },
+        { name: "RedEYE", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036551/Redeye_mfzebs.png" },
+        { name: "Jilya", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036554/Jilya_jsvpqn.png" },
+        { name: "Lorenzo", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036555/Lorenzo_um0xuj.png" },
         { name: "Book.JO", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Book.JO" },
         { name: "1/2 M", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=1%2F2+M" },
-        { name: "Brandaty", logo: brandatyLogo },
-        { name: "Burger Hunch", logo: burgerHunchLogo },
-        { name: "SkyLinks", logo: skyLinksLogo },
-        { name: "Sugar Dose", logo: sugarDoseLogo }
+        { name: "Brandaty", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Brandaty_irbxbr.png" },
+        { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
+        { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
+        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" }
       ],
     },
     services: {
