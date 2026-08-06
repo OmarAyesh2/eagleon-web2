@@ -22,15 +22,15 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
     partners: {
       title: "TRUSTED BY INDUSTRY VISIONARIES",
       items: [
-        { name: "RedEYE", logo: "./images/logos/Redeye.png" },
-        { name: "Jilya", logo: "./Images/logos/Jilya.png" },
-        { name: "Lorenzo", logo: "./images/logos/Lorenzo.png" },
+        { name: "RedEYE", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036551/Redeye_mfzebs.png" },
+        { name: "Jilya", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036554/Jilya_jsvpqn.png" },
+        { name: "Lorenzo", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036555/Lorenzo_um0xuj.png" },
         { name: "Book.JO", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=Book.JO" },
         { name: "1/2 M", logo: "https://placehold.co/200x80/transparent/FFFFFF/png?text=1%2F2+M" },
-        { name: "Brandaty", logo: "./Images/logos/Brandaty.png" },
-        { name: "Burger Hunch", logo: "./Images/logos/Burger Hunch.png" },
-        { name: "SkyLinks", logo: "./Images/logos/SkyLinks.png" },
-        { name: "Sugar Dose", logo: "./Images/logos/Sugar Dose.png" }
+        { name: "Brandaty", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Brandaty_irbxbr.png" },
+        { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
+        { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
+        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" }
       ],
     },
     services: {
