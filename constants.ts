@@ -4,6 +4,7 @@ import burgerHunchLogo from './Images/logos/Burger Hunch.png';
 import jilyaLogo from './Images/logos/Jilya.png';
 import skyLinksLogo from './Images/logos/SkyLinks.png';
 import sugarDoseLogo from './Images/logos/Sugar Dose.png';
+import protonLogo from './Images/logos/proton.png';
 
 export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
   en: {
@@ -30,7 +31,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { name: "Brandaty", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Brandaty_irbxbr.png" },
         { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
         { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
-        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" }
+        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" },
+        { name: "Proton", logo: protonLogo }
       ],
     },
     services: {
@@ -277,7 +279,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { name: "Brandaty", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Brandaty_irbxbr.png" },
         { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
         { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
-        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" }
+        { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" },
+        { name: "Proton", logo: protonLogo }
       ],
     },
     services: {

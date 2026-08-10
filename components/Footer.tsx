@@ -45,13 +45,25 @@ export const Footer: React.FC<FooterProps> = ({ content }) => {
           <div>
             <h4 className="font-bold text-white mb-6">{content.contact.title}</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-textDim hover:text-white hover:bg-primary hover:text-black transition-all">
+              <a 
+                href="https://www.instagram.com/eagleon.digital/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Instagram"
+                className="w-10 h-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-textDim hover:text-white hover:bg-primary hover:text-black transition-all"
+              >
                 <Instagram size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-textDim hover:text-white hover:bg-primary hover:text-black transition-all">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-textDim hover:text-white hover:bg-primary hover:text-black transition-all">
+              <a 
+                href="https://www.linkedin.com/company/eagleon-digital-solution/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="LinkedIn"
+                className="w-10 h-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-textDim hover:text-white hover:bg-primary hover:text-black transition-all"
+              >
                 <Linkedin size={18} />
               </a>
             </div>

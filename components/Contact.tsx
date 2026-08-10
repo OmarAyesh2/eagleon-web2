@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ContentStrings } from '../types';
-import { Mail, Phone, MapPin, ChevronDown, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, ChevronDown, Send, Linkedin, Instagram } from 'lucide-react';
 
 interface ContactProps {
   content: ContentStrings['contact'];
@@ -87,6 +87,34 @@ ${formData.message}`;
                   <a href={`tel:${content.info.phone}`} dir="ltr" className="text-white text-lg font-bold hover:text-primary transition-colors">
                     {content.info.phone}
                   </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6">
+                <div className="w-14 h-14 rounded-full bg-surface border border-white/10 flex items-center justify-center text-primary shrink-0">
+                  <Instagram size={24} />
+                </div>
+                <div>
+                  <p className="text-textDim text-sm mb-1">Follow Us</p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                    <a 
+                      href="https://www.instagram.com/eagleon.digital/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-lg font-bold hover:text-primary transition-colors"
+                    >
+                      Instagram
+                    </a>
+                    <span className="text-textDim">•</span>
+                    <a 
+                      href="https://www.linkedin.com/company/eagleon-digital-solution/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-lg font-bold hover:text-primary transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
                 </div>
               </div>
 

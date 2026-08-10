@@ -11,7 +11,6 @@ import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { CustomCursor } from './components/CustomCursor';
 import { Preloader } from './components/Preloader';
 
 function App() {
@@ -29,8 +28,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary selection:text-white">
-      <CustomCursor />
-      
       {loading && <Preloader onComplete={() => setLoading(false)} />}
 
       <Navbar 
