@@ -1,10 +1,5 @@
 import { ContentStrings } from './types';
-import brandatyLogo from './Images/logos/Brandaty.png';
-import burgerHunchLogo from './Images/logos/Burger Hunch.png';
-import jilyaLogo from './Images/logos/Jilya.png';
-import skyLinksLogo from './Images/logos/SkyLinks.png';
-import sugarDoseLogo from './Images/logos/Sugar Dose.png';
-import protonLogo from './Images/logos/proton.png';
+
 
 export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
   en: {
@@ -32,7 +27,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
         { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
         { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" },
-        { name: "Proton", logo: protonLogo }
+        { name: "Proton", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786936001/Asset_2_kqafqk.png" },
+        { name: "LeCiel Fragrance", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786934046/Asset_4_qwvlxq.png" }
       ],
     },
     services: {
@@ -114,6 +110,28 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { id: 'cgi', label: 'CGI / 3D' }
       ],
       items: [
+        {
+          title: "LeCiel Fragrance",
+          category: "Web Design & Development",
+          filter: "web",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786934300/Untitled-1-07_jmgxf5.png",
+          media: [
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Home_Page_h9hbmy.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Shop_Page_tavyj8.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933983/Product_Page_lk0wgx.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933983/Contact_Page_yu8emb.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933982/CheckOut_Page_urhhhi.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933982/Profile_Page_kalv6g.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Register_Page_smzkwj.png" }
+          ],
+          challenge: "The original LeCiel website suffered from visual clutter, poor typographic hierarchy, and a fragmented product catalog that degraded the luxury feel of the brand and hurt mobile conversion rates.",
+          solution: "We re-engineered the e-commerce experience with a clean, high-end editorial layout. By restructuring product categorization with refined visual cards, implementing smooth navigation, and optimizing the checkout flow, we elevated brand perception and streamlined the customer buying journey.",
+          metrics: [
+            { label: "Mobile User Experience Score", value: "+85%" },
+            { label: "Faster Page Load Speed", value: "4x" },
+            { label: "Checkout Conversion Flow", value: "40%" }
+          ]
+        },
         {
           title: "Redeye",
           category: "CGI / Motion Design",
@@ -280,7 +298,8 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { name: "Burger Hunch", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036553/Burger_Hunch_t86psh.png" },
         { name: "SkyLinks", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/SkyLinks_vpq5ob.png" },
         { name: "Sugar Dose", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786036552/Sugar_Dose_ewwne1.png" },
-        { name: "Proton", logo: protonLogo }
+        { name: "Proton", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786936001/Asset_2_kqafqk.png" },
+        { name: "LeCiel Fragrance", logo: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786934046/Asset_4_qwvlxq.png" }
       ],
     },
     services: {
@@ -362,6 +381,28 @@ export const CONTENT: Record<'en' | 'ar', ContentStrings> = {
         { id: 'cgi', label: 'CGI / 3D' }
       ],
       items: [
+        {
+          title: "LeCiel Fragrance",
+          category: "تصميم وتطوير مواقع / متجر إلكتروني",
+          filter: "web",
+          coverUrl: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786934300/Untitled-1-07_jmgxf5.png",
+          media: [
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Home_Page_h9hbmy.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Shop_Page_tavyj8.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933983/Product_Page_lk0wgx.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933983/Contact_Page_yu8emb.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933982/CheckOut_Page_urhhhi.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933982/Profile_Page_kalv6g.png" },
+            { type: 'image', url: "https://res.cloudinary.com/dzbsayerm/image/upload/v1786933984/Register_Page_smzkwj.png" }
+          ],
+          challenge: "كان الموقع السابق لـ LeCiel يعاني من تكدس بصري وضعف في التوزيع الهرمي للمنتجات، مما أثر سلباً على إبراز طابع الفخامة للعلامة التجارية وأدى لتجربة تصفح غير سلسة على الهواتف.",
+          solution: "أعدنا تصميم وتطوير المتجر الإلكتروني بأسلوب عصري يعكس فخامة المنتجات؛ من خلال تبسيط مسارات التصفح، وتنظيم تصنيفات العطور والإكسسوارات ببطاقات بصرية مميزة، وتحسين سرعة الموقع وتجربة الشراء بالكامل.",
+          metrics: [
+            { label: "تحسن تجربة المستخدم (Mobile UX)", value: "+85%" },
+            { label: "سرعة تحميل واستجابة أعلى", value: "4x" },
+            { label: "كفاءة مسار الطلب وإتمام الشراء", value: "40%" }
+          ]
+        },
         {
           title: "Redeye",
           category: "CGI / تصميم حركي",
